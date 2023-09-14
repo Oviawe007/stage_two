@@ -17,9 +17,9 @@ const personSchema = mongoose.Schema(
             required : false
         }
     },
-    {
-        timestamps : true
-    }
+    // {
+    //     timestamps : true
+    // }
 );
 
 const Person = mongoose.model('Person', personSchema);

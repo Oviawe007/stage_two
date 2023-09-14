@@ -71,7 +71,7 @@ app.put('/api/:id', async(req, res) => {
 
 
 //delete product
-app.delete('/products/:id', async(req, res) => {
+app.delete('/api/:id', async(req, res) => {
     try {
         const { id } = req.params;
         const people = await Person.findByIdAndDelete(id);
